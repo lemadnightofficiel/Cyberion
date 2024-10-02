@@ -33,6 +33,7 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildPresences,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
         GatewayIntentBits.GuildMessageReactions,
@@ -224,8 +225,8 @@ client.on(Events.GuildMemberAdd, async (member) => {
                     const welcomeChannel = member.guild.channels.cache.get(WELCOME_CHANNEL_ID);
                     if (welcomeChannel) {
                         const welcomeEmbed = new EmbedBuilder()
-                            .setTitle(`Bienvenue à Cyberia ${member}!`)
-                            .setDescription(`N'oublie pas de lire les règles et de passer un bon moment ! Au moindre problème ou à la moindre question n'hésite pas à contacter l'équipe du Staff.`)
+                            .setTitle(`Bienvenue à Cyberia !`)
+                            .setDescription(`${member}, n'oublie pas de lire les règles et de passer un bon moment ! Au moindre problème ou à la moindre question n'hésite pas à contacter l'équipe du Staff.`)
                             .setColor('#001F93')
                             .setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 256 }))
                             .setFooter({ text: `Membre #${member.guild.memberCount}` })
