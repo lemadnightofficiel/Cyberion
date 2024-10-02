@@ -829,7 +829,7 @@ export default {
         await new Promise(resolve => setTimeout(resolve, 2000));
       } catch (e) {
         if (e.name === 'Error [InteractionCollectorError]') {
-          await interaction.editReply({ content: 'Pas de réponse après 30 secondes, passage à la question suivante.', components: [] });
+          await interaction.editReply({ content: 'Pas de réponse après 45 secondes, passage à la question suivante.', components: [] });
           currentQuestionIndex++;
           await new Promise(resolve => setTimeout(resolve, 2000));
         } else {
@@ -842,4 +842,3 @@ export default {
   
     await interaction.editReply({ content: `Quiz terminé ! Votre score final est ${score}/${questions.length}`, components: [] });
   }
-  
