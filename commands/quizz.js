@@ -745,96 +745,100 @@ const quizzes = {
 
 export default {
     data: new SlashCommandBuilder()
-        .setName('quizz')
-        .setDescription('Répondez à un quizz sur un domaine spécifique. Attention, le temps est limité !')
-        .addStringOption(option =>
-            option.setName('domaine')
-                .setDescription('Choisissez le domaine du quizz')
-                .setRequired(true)
-                .addChoices(
-                    { name: 'Algorithmie', value: 'algorithmie' },
-                    { name: 'Linux', value: 'linux' },
-                    { name: 'Cybersécurité', value: 'cybersecurite' },
-                    { name: 'Réseau', value: 'reseau' }
-                ))
-        .addStringOption(option =>
-            option.setName('difficulte')
-                .setDescription('Choisissez la difficulté du quizz')
-                .setRequired(true)
-                .addChoices(
-                    { name: 'Débutant', value: 'Débutant' },
-                    { name: 'Intermédiaire', value: 'Intermédiaire' },
-                    { name: 'Avancé', value: 'Avancé' }
-                )),
+      .setName('quizz')
+      .setDescription('Répondez à un quizz sur un domaine spécifique. Attention, le temps est limité !')
+      .addStringOption(option =>
+        option.setName('domaine')
+          .setDescription('Choisissez le domaine du quizz')
+          .setRequired(true)
+          .addChoices(
+            { name: 'Algorithmie', value: 'algorithmie' },
+            { name: 'Linux', value: 'linux' },
+            { name: 'Cybersécurité', value: 'cybersecurite' },
+            { name: 'Réseau', value: 'reseau' }
+          ))
+      .addStringOption(option =>
+        option.setName('difficulte')
+          .setDescription('Choisissez la difficulté du quizz')
+          .setRequired(true)
+          .addChoices(
+            { name: 'Débutant', value: 'Débutant' },
+            { name: 'Intermédiaire', value: 'Intermédiaire' },
+            { name: 'Avancé', value: 'Avancé' }
+          )),
     async execute(interaction) {
-        const domain = interaction.options.getString('domaine');
-        const difficulty = interaction.options.getString('difficulte');
-        
-        await interaction.deferReply();
-        await handleQuizSession(interaction, domain, difficulty);
+      const domain = interaction.options.getString('domaine');
+      const difficulty = interaction.options.getString('difficulte');
+      await interaction.deferReply();
+      await handleQuizSession(interaction, domain, difficulty);
     },
-};
-
-async function handleQuizSession(interaction, domain, difficulty) {
+  };
+  
+  async function handleQuizSession(interaction, domain, difficulty) {
     const questions = quizzes[domain].filter(q => q.level === difficulty);
     if (questions.length === 0) {
-        return interaction.editReply('Aucune question disponible pour ce domaine et cette difficulté.');
+      return interaction.editReply('Aucune question disponible pour ce domaine et cette difficulté.');
     }
-
+  
     let currentQuestionIndex = 0;
     let score = 0;
-
+  
     while (currentQuestionIndex < questions.length) {
-        const question = questions[currentQuestionIndex];
-        const embed = new EmbedBuilder()
-            .setColor('#001F93')
-            .setTitle(`Quizz ${domain.charAt(0).toUpperCase() + domain.slice(1)} - ${difficulty}`)
-            .setDescription(`Question ${currentQuestionIndex + 1}/${questions.length}: ${question.question}`);
-
-        const row = new ActionRowBuilder()
-            .addComponents(
-                question.options.map((option, index) => 
-                    new ButtonBuilder()
-                        .setCustomId(`answer_${index}`)
-                        .setLabel(option)
-                        .setStyle(ButtonStyle.Primary)
-                )
-            );
-        row.addComponents(
+      const question = questions[currentQuestionIndex];
+      const embed = new EmbedBuilder()
+        .setColor('#001F93')
+        .setTitle(`Quizz ${domain.charAt(0).toUpperCase() + domain.slice(1)} - ${difficulty}`)
+        .setDescription(`Question ${currentQuestionIndex + 1}/${questions.length}: ${question.question}`);
+  
+      const row = new ActionRowBuilder()
+        .addComponents(
+          question.options.map((option, index) =>
             new ButtonBuilder()
-                .setCustomId('stop')
-                .setLabel('Arrêter')
-                .setStyle(ButtonStyle.Danger)
+              .setCustomId(`answer_${index}`)
+              .setLabel(option)
+              .setStyle(ButtonStyle.Primary)
+          )
         );
-
-        const response = await interaction.editReply({ embeds: [embed], components: [row] });
-
-        try {
-            const filter = i => i.user.id === interaction.user.id;
-            const confirmation = await response.awaitMessageComponent({ filter, time: 30000 });
-
-            if (confirmation.customId === 'stop') {
-                await interaction.editReply({ content: `Quiz arrêté. Votre score final est ${score}/${currentQuestionIndex}`, components: [] });
-                return;
-            }
-
-            if (confirmation.customId === `answer_${question.correct}`) {
-                score++;
-                await confirmation.update({ content: 'Bonne réponse !', components: [] });
-            } else {
-                await confirmation.update({ content: `Mauvaise réponse. La bonne réponse était : ${question.options[question.correct]}`, components: [] });
-            }
-
-            currentQuestionIndex++;
-            
-            await new Promise(resolve => setTimeout(resolve, 2000));
-
-        } catch (e) {
-            await interaction.editReply({ content: 'Pas de réponse après 30 secondes, quiz terminé.', components: [] });
-            return;
+  
+      row.addComponents(
+        new ButtonBuilder()
+          .setCustomId('stop')
+          .setLabel('Arrêter')
+          .setStyle(ButtonStyle.Danger)
+      );
+  
+      const response = await interaction.editReply({ embeds: [embed], components: [row] });
+  
+      try {
+        const filter = i => i.user.id === interaction.user.id;
+        const confirmation = await response.awaitMessageComponent({ filter, time: 30000 });
+  
+        if (confirmation.customId === 'stop') {
+          await interaction.editReply({ content: `Quiz arrêté. Votre score final est ${score}/${currentQuestionIndex}`, components: [] });
+          return;
         }
+  
+        if (confirmation.customId === `answer_${question.correct}`) {
+          score++;
+          await confirmation.update({ content: 'Bonne réponse !', components: [] });
+        } else {
+          await confirmation.update({ content: `Mauvaise réponse. La bonne réponse était : ${question.options[question.correct]}`, components: [] });
+        }
+  
+        currentQuestionIndex++;
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      } catch (e) {
+        if (e.name === 'Error [InteractionCollectorError]') {
+          await interaction.editReply({ content: 'Pas de réponse après 30 secondes, passage à la question suivante.', components: [] });
+          currentQuestionIndex++;
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        } else {
+          console.error(e);
+          await interaction.editReply({ content: 'Une erreur est survenue, le quiz est terminé.', components: [] });
+          return;
+        }
+      }
     }
-
+  
     await interaction.editReply({ content: `Quiz terminé ! Votre score final est ${score}/${questions.length}`, components: [] });
-}
- 
+  }
