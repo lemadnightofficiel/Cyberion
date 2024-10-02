@@ -811,7 +811,7 @@ export default {
   
       try {
         const filter = i => i.user.id === interaction.user.id;
-        const confirmation = await response.awaitMessageComponent({ filter, time: 30000 });
+        const confirmation = await response.awaitMessageComponent({ filter, time: 45000 });
   
         if (confirmation.customId === 'stop') {
           await interaction.editReply({ content: `Quiz arrêté. Votre score final est ${score}/${currentQuestionIndex}`, components: [] });
@@ -842,3 +842,4 @@ export default {
   
     await interaction.editReply({ content: `Quiz terminé ! Votre score final est ${score}/${questions.length}`, components: [] });
   }
+  
