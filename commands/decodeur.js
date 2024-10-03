@@ -4,51 +4,43 @@ import crypto from 'crypto';
 const challenges = [
     {
         type: 'binary',
-        question: 'Décodez ce message binaire : 01001100 01000101',
         answer: 'LE',
         hint: 'Utilisez la table ASCII pour convertir chaque octet en caractère.'
     },
     {
         type: 'caesar',
-        question: 'Décryptez ce message chiffré par César (clé = 3) : FRGH',
         answer: 'CODE',
         hint: "Déplacez chaque lettre de 3 positions en arrière dans l'alphabet."
     },
     {
         type: 'base64',
-        question: 'Décodez ce message en Base64 : U0VDUkVU',
         answer: 'SECRET',
         hint: 'Utilisez un décodeur Base64 standard.'
     },
     {
-        type: 'md5',
-        question: 'Trouvez le mot original dont le hash MD5 est : 098f6bcd4621d373cade4e832627b4f6',
-        answer: 'TEST',
-        hint: 'C\'est un mot de 4 lettres souvent utilisé en développement.'
-    },
-    {
         type: 'morse',
-        question: 'Décodez ce message en morse : . ... -',
         answer: 'EST',
         hint: "Utilisez l'alphabet morse international."
     },
     {
         type: 'atbash',
-        question: 'Décryptez ce message chiffré par Atbash : XZXSV',
         answer: 'CACHE',
         hint: "Remplacez chaque lettre par son opposé dans l'alphabet (A devient Z, B devient Y, etc.)."
     },
     {
         type: 'hex',
-        question: 'Décodez ce message hexadécimal : 44414E53',
         answer: 'DANS',
         hint: 'Convertissez chaque paire de caractères hexadécimaux en caractère ASCII.'
     },
     {
+        type: 'md5',
+        answer: 'MA',
+        hint: 'C\'est un mot de 2 lettres.'
+    },
+    {
         type: 'sha256',
-        question: 'Trouvez le mot original dont le hash SHA256 est : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08',
-        answer: 'TEST',
-        hint: 'C\'est le même mot que pour le défi MD5.'
+        answer: 'DIGNITE',
+        hint: 'C\'est un mot de 7 lettres souvent utilisé dans le contexte de la dignité.'
     }
 ];
 
@@ -70,7 +62,7 @@ function encryptChallenge(challenge) {
             break;
         case 'morse':
             const morseAlphabet = {
-                'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'T': '-'
+                'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'S': '...', 'T': '-'
             };
             challenge.question = challenge.answer.split('').map(char => morseAlphabet[char]).join(' ');
             break;
