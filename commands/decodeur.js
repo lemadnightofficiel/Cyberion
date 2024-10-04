@@ -1,46 +1,45 @@
 import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
-import crypto from 'crypto';
 
 const challenges = [
     {
         type: 'binary',
-        answer: 'LE',
-        hint: 'Utilisez la table ASCII pour convertir chaque octet en caractère.'
+        answer: 'CYBER',
+        hint: 'Convertissez le binaire en texte ASCII.'
     },
     {
         type: 'caesar',
-        answer: 'CODE',
+        answer: 'SECURITE',
         hint: "Déplacez chaque lettre de 3 positions en arrière dans l'alphabet."
     },
     {
         type: 'base64',
-        answer: 'SECRET',
-        hint: 'Utilisez un décodeur Base64 standard.'
+        answer: 'RESEAU',
+        hint: 'Décodez le message Base64.'
     },
     {
         type: 'morse',
-        answer: 'EST',
+        answer: 'CRYPTE',
         hint: "Utilisez l'alphabet morse international."
     },
     {
         type: 'atbash',
-        answer: 'CACHE',
+        answer: 'HACKER',
         hint: "Remplacez chaque lettre par son opposé dans l'alphabet (A devient Z, B devient Y, etc.)."
     },
     {
         type: 'hex',
-        answer: 'DANS',
+        answer: 'DECODE',
         hint: 'Convertissez chaque paire de caractères hexadécimaux en caractère ASCII.'
     },
     {
-        type: 'md5',
-        answer: 'MA',
-        hint: 'C\'est un mot de 2 lettres.'
+        type: 'vigenere',
+        answer: 'ENIGME',
+        hint: 'Utilisez la clé "CLE" pour décoder le message.'
     },
     {
-        type: 'sha256',
-        answer: 'DIGNITE',
-        hint: 'C\'est un mot de 7 lettres souvent utilisé dans le contexte de la dignité.'
+        type: 'rot13',
+        answer: 'CHALLENGE',
+        hint: 'Déplacez chaque lettre de 13 positions dans l\'alphabet.'
     }
 ];
 
@@ -57,12 +56,9 @@ function encryptChallenge(challenge) {
         case 'base64':
             challenge.question = Buffer.from(challenge.answer).toString('base64');
             break;
-        case 'md5':
-            challenge.question = crypto.createHash('md5').update(challenge.answer).digest('hex');
-            break;
         case 'morse':
             const morseAlphabet = {
-                'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'S': '...', 'T': '-'
+                'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'R': '.-.', 'P': '.--.', 'T': '-', 'Y': '-.--'
             };
             challenge.question = challenge.answer.split('').map(char => morseAlphabet[char]).join(' ');
             break;
@@ -74,8 +70,17 @@ function encryptChallenge(challenge) {
         case 'hex':
             challenge.question = Buffer.from(challenge.answer).toString('hex');
             break;
-        case 'sha256':
-            challenge.question = crypto.createHash('sha256').update(challenge.answer).digest('hex');
+        case 'vigenere':
+            const key = 'CLE';
+            challenge.question = challenge.answer.split('').map((char, i) => {
+                const shift = key[i % key.length].charCodeAt(0) - 65;
+                return String.fromCharCode((char.charCodeAt(0) - 65 + shift) % 26 + 65);
+            }).join('');
+            break;
+        case 'rot13':
+            challenge.question = challenge.answer.split('').map(char => 
+                String.fromCharCode((char.charCodeAt(0) - 65 + 13) % 26 + 65)
+            ).join('');
             break;
     }
     return challenge;
@@ -84,7 +89,7 @@ function encryptChallenge(challenge) {
 export default {
     data: new SlashCommandBuilder()
         .setName('decodeur')
-        .setDescription('Décodez le message secret en résolvant des énigmes cryptographiques !'),
+        .setDescription('Décodez les messages secrets en résolvant des énigmes cryptographiques.'),
     async execute(interaction) {
         await interaction.deferReply();
 
@@ -93,8 +98,8 @@ export default {
 
         const embed = new EmbedBuilder()
             .setColor('#001F93')
-            .setTitle('Le Décodeur Binaire Crypté')
-            .setDescription('Résolvez les énigmes pour découvrir le message secret. Vous avez 50 secondes par défi !');
+            .setTitle('Le Décodeur Cryptographique')
+            .setDescription('Résolvez les énigmes pour découvrir le message secret. Vous avez 1m30 par défi !');
 
         await interaction.editReply({ embeds: [embed] });
 
@@ -109,7 +114,7 @@ export default {
 
             try {
                 const filter = m => m.author.id === interaction.user.id;
-                const collected = await interaction.channel.awaitMessages({ filter, max: 1, time: 50000, errors: ['time'] });
+                const collected = await interaction.channel.awaitMessages({ filter, max: 1, time: 90000, errors: ['time'] });
                 const response = collected.first().content.toUpperCase();
 
                 if (response === encryptedChallenge.answer) {
@@ -128,7 +133,7 @@ export default {
 
         const finalEmbed = new EmbedBuilder()
             .setColor('#001F93')
-            .setTitle('Décodeur Binaire Crypté - Résultats')
+            .setTitle('Décodeur Cryptographique - Résultats')
             .setDescription(`Vous avez résolu ${score}/${challenges.length} défis.`)
             .addFields(
                 { name: 'Message final', value: finalMessage.trim() || 'Vous n\'avez pas réussi à décoder le message complet.' }

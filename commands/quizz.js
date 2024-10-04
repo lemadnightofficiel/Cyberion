@@ -52,6 +52,106 @@ function generateAlgorithmieQuestion(difficulty) {
         question: "Comment commente-t-on une ligne en JavaScript ?",
         options: ["// Commentaire", "# Commentaire", "/* Commentaire */", "-- Commentaire"],
         correct: 0
+      },
+      {
+        question: "Quel est le type de données pour les nombres à virgule flottante en Python ?",
+        options: ["int", "float", "decimal", "double"],
+        correct: 1
+      },
+      {
+        question: "Quelle méthode JavaScript est utilisée pour supprimer le dernier élément d'un tableau ?",
+        options: ["pop()", "push()", "remove()", "delete()"],
+        correct: 0
+      },
+      {
+        question: "En HTML, quelle balise est utilisée pour créer une liste non ordonnée ?",
+        options: ["<ul>", "<ol>", "<li>", "<list>"],
+        correct: 0
+      },
+      {
+        question: "Quelle propriété CSS est utilisée pour changer la couleur du texte ?",
+        options: ["text-color", "font-color", "color", "foreground-color"],
+        correct: 2
+      },
+      {
+        question: "Quelle fonction Python est utilisée pour obtenir la longueur d'une liste ?",
+        options: ["len()", "size()", "length()", "count()"],
+        correct: 0
+      },
+      {
+        question: "Quel opérateur JavaScript est utilisé pour la comparaison stricte (valeur et type) ?",
+        options: ["==", "===", "=", "!="],
+        correct: 1
+      },
+      {
+        question: "Quelle balise HTML est utilisée pour insérer une image ?",
+        options: ["<img>", "<picture>", "<image>", "<src>"],
+        correct: 0
+      },
+      {
+        question: "En CSS, quelle propriété est utilisée pour changer la police d'écriture ?",
+        options: ["font-family", "text-font", "font-style", "typeface"],
+        correct: 0
+      },
+      {
+        question: "Quelle méthode Python est utilisée pour convertir une chaîne en minuscules ?",
+        options: ["lower()", "toLower()", "lowercase()", "casefold()"],
+        correct: 0
+      },
+      {
+        question: "Comment déclare-t-on une fonction en JavaScript ?",
+        options: ["function: myFunction()", "def myFunction():", "function myFunction()", "var myFunction = function()"],
+        correct: 2
+      },
+      {
+        question: "Quel mot-clé est utilisé pour définir une classe en Python ?",
+        options: ["class", "def", "function", "struct"],
+        correct: 0
+      },
+      {
+        question: "Quelle méthode JavaScript est utilisée pour ajouter un élément à la fin d'un tableau ?",
+        options: ["append()", "push()", "add()", "insert()"],
+        correct: 1
+      },
+      {
+        question: "En HTML, quelle balise est utilisée pour créer un titre de niveau 1 ?",
+        options: ["<h1>", "<header>", "<title>", "<heading>"],
+        correct: 0
+      },
+      {
+        question: "Quelle propriété CSS est utilisée pour ajouter de l'espace autour du contenu d'un élément ?",
+        options: ["margin", "padding", "spacing", "border"],
+        correct: 1
+      },
+      {
+        question: "Quel opérateur Python est utilisé pour la division entière ?",
+        options: ["/", "//", "%", "div"],
+        correct: 1
+      },
+      {
+        question: "Quelle méthode JavaScript est utilisée pour arrondir un nombre à l'entier le plus proche ?",
+        options: ["Math.round()", "Math.floor()", "Math.ceil()", "Math.trunc()"],
+        correct: 0
+      },
+      {
+        question: "En HTML, quelle balise est utilisée pour créer un saut de ligne ?",
+        options: ["<br>", "<lb>", "<newline>", "<break>"],
+        correct: 0
+      },
+      {
+        question: "Quelle propriété CSS est utilisée pour rendre un élément flexible ?",
+        options: ["flex", "flexible", "display: flex", "position: flex"],
+        correct: 2
+      },
+      {
+        question: "Quelle fonction Python est utilisée pour générer un nombre aléatoire ?",
+        options: ["random()", "rand()", "randint()", "choice()"],
+        correct: 2
+      },
+      {
+        question: "Quel est l'opérateur d'affectation en JavaScript ?",
+        options: ["=", "==", ":=", "=>"],
+        correct: 0
       }
     ],
     Intermédiaire: [
@@ -104,6 +204,106 @@ function generateAlgorithmieQuestion(difficulty) {
         question: "Qu'est-ce qu'une compréhension de liste en Python ?",
         options: ["Une méthode pour trier une liste", "Une façon concise de créer des listes", "Un type de boucle", "Une fonction de haut niveau"],
         correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une promesse (Promise) en JavaScript ?",
+        options: ["Un type de boucle", "Un objet représentant une valeur future", "Une fonction de rappel", "Un opérateur logique"],
+        correct: 1
+      },
+      {
+        question: "En Python, que fait la fonction 'lambda' ?",
+        options: ["Définit une classe", "Crée une fonction anonyme", "Gère les exceptions", "Importe des modules"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'destructuring' en JavaScript ?",
+        options: ["Une façon de supprimer des variables", "Une technique pour extraire des valeurs d'objets ou de tableaux", "Un type de boucle", "Une méthode de tri"],
+        correct: 1
+      },
+      {
+        question: "En TypeScript, que signifie le type 'any' ?",
+        options: ["Un type pour les nombres", "Un type pour les chaînes de caractères", "Un type qui peut être n'importe quoi", "Un type pour les booléens"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le GIL en Python ?",
+        options: ["Un type de boucle", "Une bibliothèque graphique", "Un verrou global d'interpréteur", "Un gestionnaire de paquets"],
+        correct: 2
+      },
+      {
+        question: "Que fait la méthode 'map()' en JavaScript ?",
+        options: ["Crée un nouvel objet", "Applique une fonction à chaque élément d'un tableau", "Trie un tableau", "Fusionne deux tableaux"],
+        correct: 1
+      },
+      {
+        question: "En Python, qu'est-ce qu'un 'context manager' ?",
+        options: ["Un type de boucle", "Un objet qui gère l'allocation et la libération de ressources", "Une fonction de haut niveau", "Un module d'import"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'this' en JavaScript ?",
+        options: ["Un mot-clé pour créer une classe", "Une référence à l'objet courant", "Un type de donnée", "Une fonction intégrée"],
+        correct: 1
+      },
+      {
+        question: "En TypeScript, que fait le mot-clé 'extends' ?",
+        options: ["Étend la portée d'une variable", "Crée une classe dérivée", "Ajoute des propriétés à un objet", "Importe des modules"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'list slicing' en Python ?",
+        options: ["Une méthode pour trier une liste", "Une technique pour extraire une partie d'une liste", "Un type de boucle", "Une fonction de haut niveau"],
+        correct: 1
+      },
+      {
+        question: "Que fait l'opérateur 'spread' (...) en JavaScript ?",
+        options: ["Multiplie des nombres", "Étend un itérable en éléments individuels", "Crée une fonction", "Définit une classe"],
+        correct: 1
+      },
+      {
+        question: "En Python, qu'est-ce qu'un 'itérateur' ?",
+        options: ["Un type de boucle", "Un objet qui peut être itéré", "Une fonction mathématique", "Un module d'import"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'DOM' en développement web ?",
+        options: ["Document Object Model", "Data Object Management", "Dynamic Object Manipulation", "Document Orientation Model"],
+        correct: 0
+      },
+      {
+        question: "En TypeScript, que fait le mot-clé 'implements' ?",
+        options: ["Crée une nouvelle classe", "Implémente une interface", "Importe un module", "Définit une fonction"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'monkey patching' en Python ?",
+        options: ["Une technique de débogage", "La modification dynamique de classes ou modules", "Un style de nommage de variables", "Une méthode de tri"],
+        correct: 1
+      },
+      {
+        question: "Que fait la méthode 'bind()' en JavaScript ?",
+        options: ["Lie une fonction à un objet", "Crée un nouveau tableau", "Trie un tableau", "Définit une classe"],
+        correct: 0
+      },
+      {
+        question: "En Python, que fait l'opérateur '*' dans une définition de fonction ?",
+        options: ["Multiplie des arguments", "Indique un nombre variable d'arguments positionnels", "Crée un générateur", "Définit une fonction lambda"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une 'closure' en JavaScript ?",
+        options: ["Un type de boucle", "Une fonction avec son environnement lexical", "Une méthode de classe", "Un opérateur logique"],
+        correct: 1
+      },
+      {
+        question: "En TypeScript, que signifie le mot-clé 'abstract' ?",
+        options: ["Une classe qui ne peut pas être instanciée directement", "Une fonction pure", "Un type de donnée", "Un module d'import"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'pickling' en Python ?",
+        options: ["Une technique de tri", "Un processus de sérialisation d'objets", "Une méthode de compression", "Un style de nommage de variables"],
+        correct: 1
       }
     ],
     Avancé: [
@@ -155,6 +355,106 @@ function generateAlgorithmieQuestion(difficulty) {
       {
         question: "Qu'est-ce que le 'stack unwinding' en C++ ?",
         options: ["Un processus de libération de mémoire", "Le processus de destruction des objets locaux lors d'une exception", "Une technique d'optimisation", "Un type de boucle"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'memory leak' en programmation ?",
+        options: ["Un virus informatique", "Une fuite de données sensibles", "Une allocation de mémoire non libérée", "Un bug dans le compilateur"],
+        correct: 2
+      },
+      {
+        question: "En C++, que signifie le mot-clé 'virtual' pour une fonction ?",
+        options: ["La fonction n'existe pas réellement", "La fonction peut être redéfinie dans les classes dérivées", "La fonction est privée", "La fonction est statique"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'function overloading' en C++ ?",
+        options: ["Surcharger le processeur avec trop de fonctions", "Définir plusieurs fonctions avec le même nom mais des paramètres différents", "Appeler une fonction récursivement", "Optimiser une fonction"],
+        correct: 1
+      },
+      {
+        question: "En Java, que fait le mot-clé 'final' pour une classe ?",
+        options: ["La classe ne peut pas être instanciée", "La classe ne peut pas être héritée", "La classe est abstraite", "La classe est statique"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'smart pointer' en C++ ?",
+        options: ["Un pointeur qui pointe toujours vers une adresse valide", "Une classe qui simule un pointeur avec gestion automatique de la mémoire", "Un pointeur optimisé pour la vitesse", "Un pointeur qui peut pointer vers plusieurs objets"],
+        correct: 1
+      },
+      {
+        question: "En C#, que permet le mot-clé 'yield' ?",
+        options: ["De créer un générateur", "De forcer la libération de mémoire", "D'interrompre l'exécution du programme", "De définir une constante"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'diamond problem' en programmation orientée objet ?",
+        options: ["Un problème de cryptographie", "Une ambiguïté dans l'héritage multiple", "Un bug dans les algorithmes de tri", "Un problème de conception de base de données"],
+        correct: 1
+      },
+      {
+        question: "En C, que fait la fonction 'memcpy()' ?",
+        options: ["Copie un bloc de mémoire", "Alloue de la mémoire", "Libère de la mémoire", "Compare deux blocs de mémoire"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'RAII' en C++ ?",
+        options: ["Un type de boucle", "Une technique de gestion des ressources", "Un algorithme de tri", "Un design pattern"],
+        correct: 1
+      },
+      {
+        question: "En Java, que signifie le mot-clé 'transient' ?",
+        options: ["La variable est temporaire", "La variable ne sera pas sérialisée", "La variable est constante", "La variable est statique"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'type erasure' en Java ?",
+        options: ["Une technique pour effacer des variables", "Le processus de suppression des informations de type générique à la compilation", "Une méthode de cryptage", "Un bug du compilateur"],
+        correct: 1
+      },
+      {
+        question: "En C++, que fait l'opérateur de résolution de portée (::) ?",
+        options: ["Compare deux valeurs", "Accède aux membres d'une classe ou d'un namespace", "Crée un pointeur", "Définit une constante"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'buffer overflow' ?",
+        options: ["Un dépassement de capacité d'un tampon mémoire", "Une optimisation de la mémoire", "Un type de garbage collection", "Une technique de compression de données"],
+        correct: 0
+      },
+      {
+        question: "En C#, que permet le mot-clé 'async' ?",
+        options: ["De créer des méthodes asynchrones", "D'optimiser automatiquement le code", "De déclarer des variables globales", "De créer des threads"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'vtable' en C++ ?",
+        options: ["Une table de variables", "Une table de fonctions virtuelles", "Un type de structure de données", "Un outil de débogage"],
+        correct: 1
+      },
+      {
+        question: "En Java, que fait le mot-clé 'synchronized' ?",
+        options: ["Synchronise l'horloge système", "Protège une section de code pour l'accès par un seul thread à la fois", "Optimise les performances", "Gère les exceptions"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'undefined behavior' en C et C++ ?",
+        options: ["Un comportement non spécifié par le standard du langage", "Un bug dans le compilateur", "Une erreur de syntaxe", "Un type d'exception"],
+        correct: 0
+      },
+      {
+        question: "En C#, que permet le mot-clé 'ref' pour un paramètre de méthode ?",
+        options: ["De passer l'argument par référence", "De rendre le paramètre optionnel", "De rendre le paramètre constant", "De créer une référence nulle"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'copy-on-write' en programmation ?",
+        options: ["Une technique d'optimisation de la mémoire", "Un type de boucle", "Une méthode de cryptage", "Un algorithme de tri"],
+        correct: 0
+      },
+      {
+        question: "En C++, que signifie le mot-clé 'explicit' pour un constructeur ?",
+        options: ["Le constructeur est public", "Le constructeur ne peut pas être utilisé pour des conversions implicites", "Le constructeur est privé", "Le constructeur est statique"],
         correct: 1
       }
     ]
@@ -214,6 +514,106 @@ function generateLinuxQuestion(difficulty) {
         question: "Comment afficher le manuel d'une commande?",
         options: ["help", "manual", "man", "info"],
         correct: 2
+      },
+      {
+        question: "Quelle commande Linux tue un processus nommé xyz ?",
+        options: ["pkill xyz", "delete xyz", "del xyz", "mv xyz"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande Linux donne des informations détaillées sur les sockets ?",
+        options: ["ss", "ssh", "w", "fg"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande Linux supprime de force le fichier 'abc' sans confirmation ?",
+        options: ["rm -l abc", "rm -a abc", "rm -x abc", "rm -f abc"],
+        correct: 3
+      },
+      {
+        question: "Quelle commande Linux change la priorité d'un processus en cours d'exécution ?",
+        options: ["pstree", "renice", "renew", "pmap"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande déplace un processus donné de l'arrière-plan vers l'avant-plan ?",
+        options: ["ps", "fg", "df", "lf"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande Linux permet un transfert de fichiers sécurisé ?",
+        options: ["ftp", "scp", "tftp", "sctp"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande Linux liste et reprend les tâches arrêtées en arrière-plan ?",
+        options: ["ls", "bg", "fg", "ss"],
+        correct: 1
+      },
+      {
+        question: "Comment afficher les périphériques USB sous Linux ?",
+        options: ["ethtools -m", "dig -tls", "display -ls", "lsusb -tv"],
+        correct: 3
+      },
+      {
+        question: "Quelle commande peut-on exécuter pour compter le nombre de lignes dans un fichier ?",
+        options: ["lc", "count", "wc -l", "cl"],
+        correct: 2
+      },
+      {
+        question: "Comment afficher l'historique des redémarrages du système sous Linux ?",
+        options: ["last reboot", "display reboot", "reboot", "lst"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande Linux collecte et affiche les ressources système ?",
+        options: ["ds", "df", "dig", "dstat"],
+        correct: 3
+      },
+      {
+        question: "Quelle commande Linux est utilisée pour les audits de sécurité ?",
+        options: ["df", "nmap", "dig", "pwd"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande est utilisée pour le filtrage des paquets IP sous Linux ?",
+        options: ["ethtools", "filters", "dig", "iptables"],
+        correct: 3
+      },
+      {
+        question: "Pour donner les permissions 'rw- rw- r--' au fichier X, quelle commande utilise-t-on ?",
+        options: ["chmod 664 filename", "chmod 775 filename", "chmod 774 filename", "chmod 665 filename"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande Linux est utilisée pour vérifier les paramètres de votre carte réseau ?",
+        options: ["ss", "ethtool", "dig", "route"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande Linux est utilisée pour planifier l'exécution d'une commande à une heure ultérieure ?",
+        options: ["ethtools", "crontab", "dashboard", "nslookup"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande Linux est utilisée pour télécharger le contenu des serveurs web ?",
+        options: ["tftp", "ftp", "get", "wget"],
+        correct: 3
+      },
+      {
+        question: "Quelle option de ls fournit un ordre inverse sous Linux ?",
+        options: ["-r", "-b", "-t", "-l"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande affiche les informations sur le processeur sous Linux ?",
+        options: ["cpuinfo", "procinfo", "cat /proc/cpuinfo", "lscpu"],
+        correct: 2
+      },
+      {
+        question: "Quelle commande est utilisée pour afficher les processus en cours d'exécution ?",
+        options: ["ls", "ps", "top", "proc"],
+        correct: 1
       }
     ],
     Intermédiaire: [
@@ -266,6 +666,106 @@ function generateLinuxQuestion(difficulty) {
         question: "Comment afficher les connexions réseau actives?",
         options: ["netstat", "ifconfig", "network", "connections"],
         correct: 0
+      },
+      {
+        question: "Quelle commande permet de compresser un fichier en format .gz?",
+        options: ["zip", "compress", "gzip", "tar"],
+        correct: 2
+      },
+      {
+        question: "Comment afficher les 10 dernières lignes d'un fichier?",
+        options: ["head", "tail", "last", "end"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande est utilisée pour changer le propriétaire d'un fichier?",
+        options: ["chown", "chmod", "chuser", "chgrp"],
+        correct: 0
+      },
+      {
+        question: "Comment afficher l'espace disque disponible?",
+        options: ["space", "df", "disk", "free"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de trier les lignes d'un fichier?",
+        options: ["order", "sort", "arrange", "line"],
+        correct: 1
+      },
+      {
+        question: "Comment afficher le contenu d'un fichier page par page?",
+        options: ["more", "less", "page", "view"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de comparer deux fichiers?",
+        options: ["comp", "diff", "cmp", "compare"],
+        correct: 1
+      },
+      {
+        question: "Comment créer un lien symbolique?",
+        options: ["ln -s", "link -s", "symlink", "mklink"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande affiche les variables d'environnement?",
+        options: ["env", "printenv", "variables", "echo $ENV"],
+        correct: 1
+      },
+      {
+        question: "Comment afficher le calendrier du mois en cours?",
+        options: ["date", "cal", "calendar", "month"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de modifier un fichier texte en ligne de commande?",
+        options: ["edit", "vim", "modify", "change"],
+        correct: 1
+      },
+      {
+        question: "Comment afficher l'utilisation du CPU par processus?",
+        options: ["cpu", "top", "ps aux", "procstat"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de créer une archive tar?",
+        options: ["zip", "compress", "archive", "tar"],
+        correct: 3
+      },
+      {
+        question: "Comment afficher les informations sur le système d'exploitation?",
+        options: ["sysinfo", "uname", "osinfo", "version"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de se connecter à distance à un autre système Linux?",
+        options: ["remote", "connect", "ssh", "telnet"],
+        correct: 2
+      },
+      {
+        question: "Comment afficher les utilisateurs actuellement connectés au système?",
+        options: ["users", "who", "logged", "active"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de monter un système de fichiers?",
+        options: ["mount", "attach", "connect", "link"],
+        correct: 0
+      },
+      {
+        question: "Comment vérifier l'intégrité d'un fichier téléchargé avec une somme de contrôle MD5?",
+        options: ["check", "verify", "md5sum", "integrity"],
+        correct: 2
+      },
+      {
+        question: "Quelle commande permet de rechercher du texte dans des fichiers?",
+        options: ["search", "find", "grep", "lookup"],
+        correct: 2
+      },
+      {
+        question: "Comment afficher les informations sur les partitions de disque?",
+        options: ["partinfo", "fdisk -l", "diskpart", "partlist"],
+        correct: 1
       }
     ],
     Avancé: [
@@ -318,6 +818,106 @@ function generateLinuxQuestion(difficulty) {
         question: "Comment analyser les performances du système en temps réel ?",
         options: ["sysstat", "perfmon", "top", "htop"],
         correct: 3
+      },
+      {
+        question: "Quelle commande permet de configurer les règles du pare-feu iptables ?",
+        options: ["firewall-cmd", "ufw", "iptables", "nftables"],
+        correct: 2
+      },
+      {
+        question: "Comment créer un RAID 5 logiciel sous Linux ?",
+        options: ["mdadm --create", "lvcreate --type raid5", "mkraid --level=5", "raid5ctl --new"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de debugger un processus en cours d'exécution ?",
+        options: ["debug", "gdb", "strace", "ltrace"],
+        correct: 2
+      },
+      {
+        question: "Comment configurer un serveur DHCP sous Linux ?",
+        options: ["dhcpd.conf", "dhcp-server", "isc-dhcp-server", "dhcpctl"],
+        correct: 2
+      },
+      {
+        question: "Quelle commande permet de gérer les quotas disque des utilisateurs ?",
+        options: ["quota", "edquota", "setquota", "userquota"],
+        correct: 1
+      },
+      {
+        question: "Comment configurer un serveur DNS BIND sous Linux ?",
+        options: ["named.conf", "bind.conf", "dns.conf", "zone.conf"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de gérer les modules du noyau Linux ?",
+        options: ["modprobe", "insmod", "lsmod", "rmmod"],
+        correct: 0
+      },
+      {
+        question: "Comment configurer un serveur web Apache sous Linux ?",
+        options: ["apache2.conf", "httpd.conf", "web.conf", "apache.conf"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de gérer les services systemd ?",
+        options: ["service", "systemctl", "init", "sysvinit"],
+        correct: 1
+      },
+      {
+        question: "Comment configurer un serveur NFS sous Linux ?",
+        options: ["nfs.conf", "exports", "/etc/nfs", "nfsd.conf"],
+        correct: 1
+      },
+      {
+        question: "Quelle commande permet de gérer les partitions GPT ?",
+        options: ["fdisk", "gdisk", "parted", "gparted"],
+        correct: 1
+      },
+      {
+        question: "Comment configurer un serveur Samba pour le partage de fichiers Windows ?",
+        options: ["smb.conf", "samba.conf", "cifs.conf", "windows-share.conf"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de gérer les certificats SSL ?",
+        options: ["sslctl", "openssl", "certutil", "keytool"],
+        correct: 1
+      },
+      {
+        question: "Comment configurer un serveur de messagerie Postfix ?",
+        options: ["main.cf", "postfix.conf", "mail.conf", "smtp.conf"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de gérer les groupes de contrôle (cgroups) ?",
+        options: ["cgcreate", "cgmanager", "cgtool", "cgroupctl"],
+        correct: 0
+      },
+      {
+        question: "Comment configurer un serveur VPN OpenVPN sous Linux ?",
+        options: ["openvpn.conf", "vpn.conf", "server.ovpn", "tunnel.conf"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de gérer les conteneurs Linux ?",
+        options: ["docker", "lxc", "podman", "containerd"],
+        correct: 1
+      },
+      {
+        question: "Comment configurer un serveur proxy Squid sous Linux ?",
+        options: ["squid.conf", "proxy.conf", "cache.conf", "web-proxy.conf"],
+        correct: 0
+      },
+      {
+        question: "Quelle commande permet de gérer les snapshots LVM ?",
+        options: ["lvcreate", "lvsnap", "snapshot", "lvm-snap"],
+        correct: 0
+      },
+      {
+        question: "Comment configurer un serveur de base de données PostgreSQL sous Linux ?",
+        options: ["postgres.conf", "postgresql.conf", "pgsql.conf", "db.conf"],
+        correct: 1
       }
     ]
   };
@@ -376,6 +976,106 @@ function generateCybersecuriteQuestion(difficulty) {
         question: "Qu'est-ce qu'une authentification à deux facteurs (2FA) ?",
         options: ["Utiliser deux mots de passe différents", "Combiner deux éléments distincts pour vérifier l'identité", "Se connecter depuis deux appareils différents", "Changer de mot de passe deux fois par jour"],
         correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'un malware ?",
+        options: ["Un logiciel malveillant", "Un antivirus", "Un pare-feu", "Un type de mot de passe"],
+        correct: 0
+      },
+      {
+        question: "Que signifie l'acronyme VPN ?",
+        options: ["Very Private Network", "Virtual Private Network", "Virus Protection Network", "Verified Personal Network"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une attaque par force brute ?",
+        options: ["Une attaque physique sur un serveur", "Une tentative de deviner un mot de passe en essayant toutes les combinaisons possibles", "Un type de virus", "Une faille dans le matériel"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal d'un pare-feu ?",
+        options: ["Accélérer la connexion internet", "Filtrer le trafic réseau", "Stocker des mots de passe", "Créer des sauvegardes"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'social engineering' en cybersécurité ?",
+        options: ["Une technique de programmation", "Une méthode de cryptage", "Une manipulation psychologique pour obtenir des informations", "Un type de réseau social"],
+        correct: 2
+      },
+      {
+        question: "Que signifie l'acronyme HTTPS ?",
+        options: ["Hyper Text Transfer Protocol Secure", "High Tech Transfer Protocol System", "Hyper Text Transmission Protocol Service", "Home Tech Transfer Protocol Secure"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce qu'un 'cookie' dans le contexte web ?",
+        options: ["Un virus", "Un petit fichier stocké sur l'ordinateur par un site web", "Un type de pare-feu", "Un mot de passe sécurisé"],
+        correct: 1
+      },
+      {
+        question: "Quel est le rôle d'un gestionnaire de mots de passe ?",
+        options: ["Créer des mots de passe faibles", "Stocker et gérer de manière sécurisée les mots de passe", "Partager les mots de passe avec d'autres utilisateurs", "Supprimer tous les mots de passe"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une 'backdoor' en informatique ?",
+        options: ["Une porte de secours", "Un accès secret à un système", "Un type de firewall", "Un antivirus"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme DDoS ?",
+        options: ["Data Deletion on Server", "Distributed Denial of Service", "Digital Download Service", "Direct Data Storage"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'phishing' ?",
+        options: ["Une technique de pêche", "Une attaque visant à voler des informations en se faisant passer pour une entité de confiance", "Un type de cryptage", "Un logiciel antivirus"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal d'un logiciel antivirus ?",
+        options: ["Améliorer les performances de l'ordinateur", "Détecter et supprimer les logiciels malveillants", "Créer des sauvegardes", "Gérer les mots de passe"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une mise à jour de sécurité ?",
+        options: ["Un nouveau design pour le logiciel", "Un correctif pour des vulnérabilités connues", "Une augmentation de la vitesse du processeur", "Un changement de mot de passe"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme SQL dans le contexte d'une injection SQL ?",
+        options: ["Secure Query Language", "Structured Query Language", "System Quality Language", "Server Query Lookup"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'un 'botnet' ?",
+        options: ["Un réseau d'ordinateurs infectés contrôlés à distance", "Un type d'antivirus", "Un langage de programmation", "Un système d'exploitation sécurisé"],
+        correct: 0
+      },
+      {
+        question: "Quel est le principe de base du chiffrement asymétrique ?",
+        options: ["Utiliser une seule clé pour chiffrer et déchiffrer", "Utiliser deux clés différentes : une publique et une privée", "Ne pas utiliser de clé", "Chiffrer uniquement les fichiers importants"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une politique de mot de passe ?",
+        options: ["Un mot de passe utilisé par les politiciens", "Un ensemble de règles pour créer des mots de passe sécurisés", "Un type de virus", "Un logiciel de gestion de mots de passe"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme IoT ?",
+        options: ["Internet of Things", "Internal of Technology", "Intranet of Tools", "Intelligence of Tech"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce qu'un 'zero-day exploit' ?",
+        options: ["Une attaque exploitant une vulnérabilité inconnue du fabricant", "Un virus qui se propage en 0 jour", "Un type de pare-feu", "Une technique de cryptage"],
+        correct: 0
+      },
+      {
+        question: "Quel est le but principal d'un test de pénétration ?",
+        options: ["Améliorer les performances du réseau", "Identifier les vulnérabilités de sécurité", "Installer de nouveaux logiciels", "Former les employés"],
+        correct: 1
       }
     ],
     Intermédiaire: [
@@ -428,6 +1128,106 @@ function generateCybersecuriteQuestion(difficulty) {
         question: "Qu'est-ce qu'une politique de sécurité ?",
         options: ["Un logiciel antivirus", "Un ensemble de règles pour protéger les systèmes et les données", "Un type de firewall", "Un protocole de chiffrement"],
         correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'footprinting' en cybersécurité ?",
+        options: ["Une technique de marche silencieuse", "La collecte d'informations sur une cible potentielle", "Un type de malware", "Une méthode de chiffrement"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme CSRF ?",
+        options: ["Centralized Security Response Force", "Cross-Site Request Forgery", "Cryptographic Secure Random Function", "Client-Server Relationship Framework"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une attaque par 'buffer overflow' ?",
+        options: ["Une surcharge de la mémoire tampon", "Un type de DDoS", "Une technique de phishing", "Un virus qui remplit le disque dur"],
+        correct: 0
+      },
+      {
+        question: "Quel est le principe de base du chiffrement asymétrique ?",
+        options: ["Utiliser la même clé pour chiffrer et déchiffrer", "Utiliser des clés différentes pour chiffrer et déchiffrer", "Ne pas utiliser de clé", "Chiffrer uniquement les en-têtes des messages"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une attaque de type 'zero-day' ?",
+        options: ["Une attaque qui dure moins d'une journée", "Une attaque exploitant une vulnérabilité inconnue", "Une attaque qui efface toutes les données", "Une attaque qui ne cause aucun dommage"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme SIEM ?",
+        options: ["Security Information and Event Management", "System Integration for Enterprise Management", "Secure Internet Email Monitor", "Server Infrastructure Evaluation Method"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce qu'une 'backdoor' en informatique ?",
+        options: ["Une porte de secours physique", "Un accès secret à un système", "Un type de firewall", "Une méthode de sauvegarde"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal d'un WAF (Web Application Firewall) ?",
+        options: ["Accélérer le chargement des pages web", "Protéger contre les attaques spécifiques aux applications web", "Gérer les bases de données web", "Créer des sites web sécurisés"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'sandboxing' en sécurité informatique ?",
+        options: ["Une technique de cryptage", "Un environnement isolé pour tester des logiciels potentiellement dangereux", "Un type d'attaque DDoS", "Une méthode de sauvegarde"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme APT dans le contexte de la cybersécurité ?",
+        options: ["Advanced Persistent Threat", "Automated Penetration Testing", "Application Programming Technique", "Anti-Phishing Technology"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'pentesting' ?",
+        options: ["Un test d'écriture", "Un test de pénétration pour évaluer la sécurité d'un système", "Un test de performance", "Un test de compatibilité"],
+        correct: 1
+      },
+      {
+        question: "Quel est le principe de base de l'attaque 'pass-the-hash' ?",
+        options: ["Deviner des mots de passe", "Utiliser un hash de mot de passe volé sans connaître le mot de passe en clair", "Casser des algorithmes de hachage", "Créer des mots de passe forts"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'pharming' ?",
+        options: ["Une technique d'agriculture", "Une attaque redirigeant le trafic vers un site malveillant", "Un type de spam", "Une méthode de chiffrement"],
+        correct: 1
+      },
+      {
+        question: "Que signifie l'acronyme OWASP ?",
+        options: ["Open Web Application Security Project", "Online Web Attack and Security Prevention", "Organized Wireless Access Security Protocol", "Optimized Web Application Scanning Process"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce qu'une attaque de type 'watering hole' ?",
+        options: ["Une attaque ciblant les systèmes d'irrigation", "Une attaque infectant des sites légitimes fréquentés par la cible", "Un type de DDoS utilisant des requêtes HTTP GET", "Une technique de phishing par email"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal d'un HIDS (Host-based Intrusion Detection System) ?",
+        options: ["Protéger contre les virus", "Détecter les intrusions sur un hôte spécifique", "Gérer les mots de passe", "Accélérer les performances du système"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'salting' dans le contexte du hachage de mots de passe ?",
+        options: ["Ajouter du sel aux serveurs pour les protéger", "Ajouter des données aléatoires avant le hachage", "Une technique de cryptage symétrique", "Renforcer physiquement les serveurs"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'CIA triad' en sécurité de l'information ?",
+        options: ["Central Intelligence Agency", "Confidentiality, Integrity, Availability", "Cyber Intelligence Alliance", "Critical Infrastructure Assessment"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une attaque de type 'race condition' ?",
+        options: ["Une compétition de piratage", "Une vulnérabilité liée au timing dans un système", "Un type de malware qui se propage rapidement", "Une attaque ciblant les voitures connectées"],
+        correct: 1
+      },
+      {
+        question: "Quel est le principe de base de la stéganographie ?",
+        options: ["Cacher des informations dans d'autres données apparemment inoffensives", "Un type de chiffrement fort", "Une technique de compression de données", "Une méthode d'authentification biométrique"],
+        correct: 0
       }
     ],
     Avancé: [
@@ -480,6 +1280,106 @@ function generateCybersecuriteQuestion(difficulty) {
         question: "Qu'est-ce que le 'purple teaming' en cybersécurité ?",
         options: ["Une équipe de développement", "Une collaboration entre les équipes red et blue", "Un type de malware", "Une technique de cryptage"],
         correct: 1
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Rowhammer' ?",
+        options: ["Une attaque sur les processeurs", "Un type de malware pour smartphones", "Une exploitation de la mémoire RAM", "Une attaque sur les routeurs Wi-Fi"],
+        correct: 2
+      },
+      {
+        question: "Que signifie 'OSINT' en cybersécurité ?",
+        options: ["Operating System Integration", "Online Security Incident Notification", "Optimized System Intrusion Network", "Open Source Intelligence"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'firmware fuzzing' ?",
+        options: ["Une technique de cryptage du firmware", "Une méthode de mise à jour du firmware", "Un type de malware ciblant le firmware", "Un test de sécurité du firmware par injection de données aléatoires"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Side-channel' ?",
+        options: ["Une attaque sur les canaux de communication secondaires", "Une attaque sur les serveurs DNS", "Un type de phishing ciblé", "Une exploitation des fuites d'information physiques d'un système"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'YARA' dans le contexte de la détection de malware ?",
+        options: ["Your Advanced Response Algorithm", "Yet Another Recursive Analyzer", "Your Automated Ransomware Analyzer", "Yet Another Ridiculous Acronym"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'Cyber Threat Intelligence' ?",
+        options: ["Un type de malware avancé", "Un framework de sécurité", "L'analyse et la collecte d'informations sur les menaces cybernétiques", "Un outil de cryptage"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Golden Ticket' dans le contexte de Kerberos ?",
+        options: ["Une attaque sur les systèmes de billetterie en ligne", "Un type de ransomware", "Une attaque sur les systèmes de paiement", "Une exploitation permettant de créer des tickets d'authentification valides"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'EDR' en cybersécurité ?",
+        options: ["Enhanced Data Recovery", "Extended Disaster Recovery", "Endpoint Detection and Response", "Encrypted Data Routing"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Pass-the-Hash' ?",
+        options: ["Une technique de craquage de mot de passe", "Un type de malware", "Une méthode de chiffrement", "Une attaque utilisant des hachages de mot de passe volés sans connaître le mot de passe en clair"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'Fileless Malware' ?",
+        options: ["Un virus qui supprime tous les fichiers", "Un malware qui n'utilise pas de fichiers sur le disque", "Un type de ransomware", "Un malware qui ne laisse aucune trace"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'CASB' dans le contexte de la sécurité cloud ?",
+        options: ["Centralized Application Security Baseline", "Cyber Attack Simulation and Behavior", "Critical Asset Security Backup", "Cloud Access Security Broker"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Spectre' ?",
+        options: ["Une attaque sur les systèmes de spectrométrie", "Un type de malware furtif", "Une vulnérabilité exploitant la prédiction de branchement des processeurs", "Une attaque sur les réseaux 5G"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'Threat Modeling' en développement sécurisé ?",
+        options: ["Une technique de modélisation 3D des menaces", "Un outil de simulation d'attaques", "Une méthode de classification des malwares", "Un processus d'identification et de priorisation des menaces potentielles"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'DMARC' dans le contexte de la sécurité des emails ?",
+        options: ["Direct Mail Anti-Ransomware Control", "Digital Mail Archive and Recovery Center", "Domain-based Message Authentication, Reporting & Conformance", "Distributed Malware Analysis and Remediation Cloud"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Evil Twin' en sécurité Wi-Fi ?",
+        options: ["Un type de malware affectant deux appareils simultanément", "La création d'un point d'accès malveillant imitant un réseau légitime", "Une technique de clonage de cartes SIM", "Une attaque ciblant les jumeaux"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'Cyber Kill Chain' ?",
+        options: ["Un jeu vidéo de cybersécurité", "Une technique de destruction de malware", "Un outil de simulation d'attaques", "Un modèle décrivant les étapes d'une cyberattaque"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'OWASP' dans le contexte de la sécurité des applications web ?",
+        options: ["Online Web Attack Simulation Platform", "Optimized Web Application Scanning Process", "Organized Wireless Access Security Protocol", "Open Web Application Security Project"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que l'attaque 'Man-in-the-Disk' ?",
+        options: ["Une attaque sur les disques durs", "Un type de ransomware", "Une exploitation de la zone de stockage externe sur Android", "Une technique d'interception de données sur les CD-ROMs"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'Cyber Threat Hunting' proactif ?",
+        options: ["Un jeu de rôle en cybersécurité", "Une technique de phishing avancée", "Une chasse aux hackers", "La recherche active de menaces non détectées dans un réseau"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'ZTA' en architecture de sécurité moderne ?",
+        options: ["Zoned Threat Analysis", "Zenith Tactical Approach", "Zero Trust Architecture", "Zeta Transmission Algorithm"],
+        correct: 2
       }
     ]
   };
@@ -538,6 +1438,106 @@ function generateReseauQuestion(difficulty) {
         question: "Quelle est la différence principale entre un hub et un switch ?",
         options: ["Le hub est plus rapide", "Le switch est moins cher", "Le hub envoie les données à tous les ports, le switch seulement au port destinataire", "Il n'y a pas de différence"],
         correct: 2
+      },
+      {
+        question: "Que signifie 'DNS' ?",
+        options: ["Data Network System", "Domain Name System", "Digital Network Service", "Dynamic Node Selector"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal d'un pare-feu ?",
+        options: ["Accélérer la connexion Internet", "Filtrer le trafic réseau", "Stocker des données", "Envoyer des e-mails"],
+        correct: 1
+      },
+      {
+        question: "Quelle est la vitesse standard d'Ethernet ?",
+        options: ["10 Mbps", "100 Mbps", "1 Gbps", "Toutes ces réponses"],
+        correct: 3
+      },
+      {
+        question: "Que signifie 'URL' ?",
+        options: ["Universal Resource Locator", "Uniform Reference Link", "User Request Line", "Unified Resource List"],
+        correct: 0
+      },
+      {
+        question: "Quel type de câble est le plus couramment utilisé pour les réseaux Ethernet ?",
+        options: ["Coaxial", "Fibre optique", "Paire torsadée", "Sans fil"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce qu'une adresse MAC ?",
+        options: ["Un identifiant unique pour chaque interface réseau", "Un type de protocole réseau", "Une adresse e-mail", "Un mot de passe réseau"],
+        correct: 0
+      },
+      {
+        question: "Quel est le rôle principal d'un serveur DHCP ?",
+        options: ["Bloquer les virus", "Attribuer automatiquement des adresses IP", "Stocker des fichiers", "Envoyer des e-mails"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'IoT' ?",
+        options: ["Internet of Things", "Internal of Technology", "Intranet of Tools", "Interface of Terminals"],
+        correct: 0
+      },
+      {
+        question: "Quel protocole est utilisé pour sécuriser les connexions Web ?",
+        options: ["HTTP", "FTP", "HTTPS", "SMTP"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce qu'un serveur proxy ?",
+        options: ["Un type de virus", "Un intermédiaire entre les clients et les serveurs", "Un logiciel de messagerie", "Un type de routeur"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal du protocole FTP ?",
+        options: ["Envoyer des e-mails", "Transférer des fichiers", "Naviguer sur le Web", "Sécuriser les connexions"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'ISP' ?",
+        options: ["Internet Service Provider", "Internal Security Protocol", "Integrated System Process", "International Standard Procedure"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce qu'un port réseau ?",
+        options: ["Un type de câble", "Un point d'entrée ou de sortie pour les données", "Un appareil de stockage", "Un logiciel antivirus"],
+        correct: 1
+      },
+      {
+        question: "Quel est le rôle principal d'un répéteur réseau ?",
+        options: ["Filtrer le trafic", "Amplifier le signal", "Stocker des données", "Envoyer des e-mails"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une adresse IP dynamique ?",
+        options: ["Une adresse qui ne change jamais", "Une adresse attribuée automatiquement et qui peut changer", "Une adresse utilisée uniquement pour les jeux en ligne", "Une adresse pour les réseaux sans fil"],
+        correct: 1
+      },
+      {
+        question: "Quel est le protocole standard pour l'envoi de pages Web ?",
+        options: ["FTP", "SMTP", "HTTP", "DHCP"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce qu'un ping en réseau ?",
+        options: ["Un type de virus", "Un outil pour tester la connectivité", "Un protocole de sécurité", "Un type de câble réseau"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'NIC' dans le contexte des réseaux ?",
+        options: ["Network Interface Card", "New Internet Connection", "Node Identification Code", "National Information Center"],
+        correct: 0
+      },
+      {
+        question: "Quel est le but principal d'un serveur DNS ?",
+        options: ["Stocker des fichiers", "Traduire les noms de domaine en adresses IP", "Envoyer des e-mails", "Filtrer le spam"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une topologie en étoile ?",
+        options: ["Un type de virus", "Une configuration réseau où tous les nœuds sont connectés à un point central", "Un protocole de sécurité", "Un type de câble réseau"],
+        correct: 1
       }
     ],
     Intermédiaire: [
@@ -589,6 +1589,106 @@ function generateReseauQuestion(difficulty) {
       {
         question: "Quel est le rôle du protocole ARP dans un réseau ?",
         options: ["Gérer les adresses e-mail", "Traduire les adresses IP en adresses MAC", "Crypter les données", "Configurer les routeurs"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le protocole OSPF ?",
+        options: ["Un protocole de messagerie", "Un protocole de routage dynamique", "Un protocole de transfert de fichiers", "Un protocole de sécurité"],
+        correct: 1
+      },
+      {
+        question: "Que signifie 'QoS' en réseautique ?",
+        options: ["Query of Service", "Quality of Service", "Quantity of Servers", "Quick Online Setup"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'un 'trunk port' sur un switch ?",
+        options: ["Un port réservé aux administrateurs", "Un port qui transporte le trafic de plusieurs VLANs", "Un port à haute vitesse", "Un port de sauvegarde"],
+        correct: 1
+      },
+      {
+        question: "Quel protocole est utilisé pour la gestion à distance des équipements réseau ?",
+        options: ["HTTP", "FTP", "SNMP", "SMTP"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'BGP' en routage ?",
+        options: ["Basic Gateway Protocol", "Border Gateway Protocol", "Bandwidth Guarantee Protocol", "Backup Gateway Process"],
+        correct: 1
+      },
+      {
+        question: "Que fait un serveur RADIUS ?",
+        options: ["Gère les adresses IP", "Fournit l'authentification, l'autorisation et la comptabilité", "Contrôle le trafic réseau", "Stocke les fichiers de configuration"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'STP' dans les réseaux commutés ?",
+        options: ["Standard Transfer Protocol", "Spanning Tree Protocol", "Secure Transmission Process", "Switch Timing Protocol"],
+        correct: 1
+      },
+      {
+        question: "Quel est le but principal du protocole ICMP ?",
+        options: ["Transférer des fichiers", "Envoyer des messages d'erreur et de contrôle", "Gérer les adresses IP", "Sécuriser les connexions"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce qu'une DMZ en architecture réseau ?",
+        options: ["Dynamic Management Zone", "Demilitarized Zone", "Data Management Zone", "Direct Memory Zone"],
+        correct: 1
+      },
+      {
+        question: "Quel protocole est utilisé pour la voix sur IP (VoIP) ?",
+        options: ["HTTP", "FTP", "SIP", "SMTP"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'MPLS' en réseautique ?",
+        options: ["Multi-Protocol Label Switching", "Maximum Packet Length Service", "Managed Private Line Service", "Multiple Path Linking System"],
+        correct: 0
+      },
+      {
+        question: "Quel est le rôle d'un serveur NTP dans un réseau ?",
+        options: ["Gérer les noms de domaine", "Synchroniser l'heure sur les appareils réseau", "Filtrer le spam", "Gérer les licences logicielles"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que l'agrégation de liens (Link Aggregation) ?",
+        options: ["Une technique de cryptage", "La combinaison de plusieurs liens réseau en un seul", "Un type de routage", "Une méthode de compression de données"],
+        correct: 1
+      },
+      {
+        question: "Quel protocole est utilisé pour l'authentification basée sur le port ?",
+        options: ["PAP", "CHAP", "802.1X", "Kerberos"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'CIDR' en adressage IP ?",
+        options: ["Centralized IP Distribution Registry", "Classless Inter-Domain Routing", "Controlled Internet Data Routing", "Customized IP Delivery Route"],
+        correct: 1
+      },
+      {
+        question: "Quel est le rôle d'un load balancer dans un réseau ?",
+        options: ["Équilibrer la charge entre plusieurs serveurs", "Gérer les adresses IP", "Filtrer le trafic malveillant", "Stocker les données de configuration"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'SDN' en réseautique moderne ?",
+        options: ["Secure Data Network", "Software-Defined Networking", "System Distribution Node", "Synchronized Device Navigation"],
+        correct: 1
+      },
+      {
+        question: "Quel protocole est utilisé pour la découverte automatique des voisins sur un réseau IPv6 ?",
+        options: ["ARP", "RARP", "NDP", "DHCP"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'VXLAN' ?",
+        options: ["Virtual Extended LAN", "Very eXtensive Local Area Network", "Variable Cross-Link Area Network", "Verified eXternal LAN"],
+        correct: 0
+      },
+      {
+        question: "Quel est le but principal du protocole EIGRP ?",
+        options: ["Crypter les données", "Routage dynamique", "Gestion des adresses IP", "Transfert de fichiers"],
         correct: 1
       }
     ],
@@ -642,6 +1742,106 @@ function generateReseauQuestion(difficulty) {
         question: "Qu'est-ce que le 'Network Slicing' dans le contexte de la 5G ?",
         options: ["Une technique de découpage de câbles réseau", "La division d'un réseau physique en plusieurs réseaux virtuels", "Un protocole de routage", "Une méthode de cryptage"],
         correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'VXLAN' et quel problème résout-il ?",
+        options: ["Un protocole de routage", "Un type de firewall", "Une technique de virtualisation de réseau pour étendre les VLANs", "Un protocole de sécurité"],
+        correct: 2
+      },
+      {
+        question: "Expliquez le concept de 'Segment Routing' dans le contexte des réseaux SDN.",
+        options: ["Une technique de routage source utilisant des instructions de chemin", "Une méthode de routage basée sur les segments de câbles", "Un protocole de sécurisation des segments réseau", "Une méthode de segmentation des paquets"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'P4' dans le contexte des réseaux programmables ?",
+        options: ["Un protocole de routage", "Un type de switch", "Un standard de câblage", "Un langage de programmation pour le plan de données des réseaux"],
+        correct: 3
+      },
+      {
+        question: "Quel est le rôle du protocole 'LISP' dans les réseaux ?",
+        options: ["Programmer des routeurs", "Optimiser les requêtes DNS", "Gérer les listes de contrôle d'accès", "Séparer la localisation et l'identité dans l'adressage IP"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'Network Function Virtualization' (NFV) ?",
+        options: ["Un concept remplaçant les équipements réseau physiques par des fonctions virtuelles", "Une technique de virtualisation des serveurs", "Un protocole de sécurité", "Une méthode de routage virtuel"],
+        correct: 0
+      },
+      {
+        question: "Expliquez le concept de 'Intent-Based Networking'.",
+        options: ["Un type de firewall", "Une méthode de routage intentionnel", "Un réseau basé sur l'intention des utilisateurs", "Une approche où le réseau s'auto-configure basé sur des objectifs de haut niveau"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'Network Service Mesh' ?",
+        options: ["Un type de topologie réseau", "Une technique de câblage", "Un framework pour l'orchestration de services réseau dans Kubernetes", "Un protocole de maillage"],
+        correct: 2
+      },
+      {
+        question: "Quel est le rôle du protocole 'QUIC' dans les communications réseau ?",
+        options: ["Gérer la qualité de service", "Améliorer la performance et la sécurité des communications web", "Accélérer les requêtes DNS", "Optimiser le routage"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'Network Telemetry' ?",
+        options: ["Une méthode de cryptage", "Une technique de mesure de distance réseau", "Un processus de collecte et d'analyse de données réseau en temps réel", "Un protocole de gestion à distance"],
+        correct: 2
+      },
+      {
+        question: "Expliquez le concept de 'Zero Trust Network'.",
+        options: ["Un réseau sans authentification", "Un type de VPN", "Un réseau sans fil", "Un modèle de sécurité qui ne fait confiance à rien par défaut"],
+        correct: 3
+      },
+      {
+        question: "Qu'est-ce que le 'Time-Sensitive Networking' (TSN) ?",
+        options: ["Un ensemble de standards IEEE pour les réseaux temps réel", "Un protocole de synchronisation horaire", "Une technique de gestion du temps CPU", "Un type de QoS"],
+        correct: 0
+      },
+      {
+        question: "Quel est le rôle du 'eBPF' dans la gestion des réseaux modernes ?",
+        options: ["Un type de firewall", "Un standard de virtualisation", "Une technologie permettant d'exécuter des programmes personnalisés dans le noyau Linux", "Un protocole de routage"],
+        correct: 2
+      },
+      {
+        question: "Qu'est-ce que le 'Network Chaos Engineering' ?",
+        options: ["Un type de DDoS", "Une technique de hacking", "Une méthode de conception de réseau", "Une approche pour tester la résilience des réseaux en introduisant des perturbations contrôlées"],
+        correct: 3
+      },
+      {
+        question: "Expliquez le concept de 'Programmable Data Plane'.",
+        options: ["Un type de SDN", "La capacité de programmer le comportement du plan de données des équipements réseau", "Un plan de données fixe", "Une technique de routage"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'Network Digital Twin' ?",
+        options: ["Un type de backup", "Une copie physique d'un réseau", "Un protocole de synchronisation", "Une représentation virtuelle et dynamique d'un réseau physique"],
+        correct: 3
+      },
+      {
+        question: "Quel est le rôle du 'gRPC' dans les architectures réseau modernes ?",
+        options: ["Un framework RPC haute performance pour la communication inter-services", "Un protocole de routage", "Un type de switch", "Un standard de câblage"],
+        correct: 0
+      },
+      {
+        question: "Qu'est-ce que le 'Network Service Header' (NSH) ?",
+        options: ["Un type de QoS", "Un en-tête HTTP", "Un protocole pour le chaînage de services réseau", "Une technique de compression"],
+        correct: 2
+      },
+      {
+        question: "Expliquez le concept de 'Hybrid Cloud Networking'.",
+        options: ["Un type de VPN", "Une approche intégrant les réseaux on-premise et cloud", "Un réseau uniquement dans le cloud", "Une technique de virtualisation"],
+        correct: 1
+      },
+      {
+        question: "Qu'est-ce que le 'Data Plane Development Kit' (DPDK) ?",
+        options: ["Un outil de conception de réseau", "Un protocole de routage", "Un kit de développement pour applications mobiles", "Un ensemble de bibliothèques pour accélérer le traitement des paquets"],
+        correct: 3
+      },
+      {
+        question: "Quel est le rôle du 'OpenConfig' dans la gestion des réseaux ?",
+        options: ["Un protocole de routage ouvert", "Un effort de standardisation pour la gestion et la configuration des réseaux", "Un outil de configuration open-source", "Un type de firewall open-source"],
+        correct: 1
       }
     ]
   };
@@ -649,17 +1849,7 @@ function generateReseauQuestion(difficulty) {
 }
 
 function generateQuestions(domain, difficulty, count) {
-  const generatorFunctions = {
-      algorithmie: generateAlgorithmieQuestion,
-      linux: generateLinuxQuestion,
-      cybersecurite: generateCybersecuriteQuestion,
-      reseau: generateReseauQuestion
-  };
-  const questions = [];
-  for (let i = 0; i < count; i++) {
-      questions.push(generatorFunctions[domain](difficulty));
-  }
-  return questions;
+  return Array.from({ length: count }, () => generatorFunctions[domain](difficulty));
 }
 
 function shuffleArray(array) {
@@ -667,10 +1857,9 @@ function shuffleArray(array) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
   }
-  return array;
 }
 
-export default {
+module.exports = {
   data: new SlashCommandBuilder()
       .setName('quizz')
       .setDescription('Répondez à un quizz sur un domaine spécifique. Attention, le temps est limité !')
@@ -698,31 +1887,29 @@ export default {
       const difficulty = interaction.options.getString('difficulte');
       await interaction.deferReply();
       const allQuestions = generateQuestions(domain, difficulty, 20);
-      const selectedQuestions = shuffleArray(allQuestions).slice(0, 10);
+      shuffleArray(allQuestions);
+      const selectedQuestions = allQuestions.slice(0, 10);
       await handleQuizSession(interaction, domain, difficulty, selectedQuestions);
   },
 };
 
 async function handleQuizSession(interaction, domain, difficulty, questions) {
-  let currentQuestionIndex = 0;
   let score = 0;
-  while (currentQuestionIndex < questions.length) {
-      const question = questions[currentQuestionIndex];
-      const embed = new EmbedBuilder()
-          .setColor('#001F93')
-          .setTitle(`Quizz ${domain.charAt(0).toUpperCase() + domain.slice(1)} - ${difficulty}`)
-          .setDescription(`Question ${currentQuestionIndex + 1}/${questions.length}: ${question.question}`);
-      
-      const row = new ActionRowBuilder()
-          .addComponents(
-              question.options.map((option, index) =>
-                  new ButtonBuilder()
-                      .setCustomId(`answer_${index}`)
-                      .setLabel(option)
-                      .setStyle(ButtonStyle.Primary)
-              )
-          );
-      
+  const embed = new EmbedBuilder().setColor('#001F93');
+  const row = new ActionRowBuilder();
+
+  for (let i = 0; i < questions.length; i++) {
+      const question = questions[i];
+      embed.setTitle(`Quizz ${domain.charAt(0).toUpperCase() + domain.slice(1)} - ${difficulty}`)
+           .setDescription(`Question ${i + 1}/${questions.length}: ${question.question}`);
+
+      row.components = question.options.map((option, index) =>
+          new ButtonBuilder()
+              .setCustomId(`answer_${index}`)
+              .setLabel(option)
+              .setStyle(ButtonStyle.Primary)
+      );
+
       row.addComponents(
           new ButtonBuilder()
               .setCustomId('stop')
@@ -730,30 +1917,28 @@ async function handleQuizSession(interaction, domain, difficulty, questions) {
               .setStyle(ButtonStyle.Danger)
       );
 
-      const response = await interaction.editReply({ embeds: [embed], components: [row] });
-      
+      await interaction.editReply({ embeds: [embed], components: [row] });
+
       try {
           const filter = i => i.user.id === interaction.user.id;
-          const confirmation = await response.awaitMessageComponent({ filter, time: 30000 });
-          
+          const confirmation = await interaction.channel.awaitMessageComponent({ filter, time: 30000 });
+
           if (confirmation.customId === 'stop') {
-              await interaction.editReply({ content: `Quiz arrêté. Votre score final est ${score}/${currentQuestionIndex}`, components: [] });
+              await interaction.editReply({ content: `Quiz arrêté. Votre score final est ${score}/${i}`, components: [] });
               return;
           }
 
-          if (confirmation.customId === `answer_${question.correct}`) {
-              score++;
-              await confirmation.update({ content: 'Bonne réponse !', components: [] });
-          } else {
-              await confirmation.update({ content: `Mauvaise réponse. La bonne réponse était : ${question.options[question.correct]}`, components: [] });
-          }
+          const isCorrect = confirmation.customId === `answer_${question.correct}`;
+          score += isCorrect ? 1 : 0;
+          await confirmation.update({ 
+              content: isCorrect ? 'Bonne réponse !' : `Mauvaise réponse. La bonne réponse était : ${question.options[question.correct]}`, 
+              components: [] 
+          });
 
-          currentQuestionIndex++;
           await new Promise(resolve => setTimeout(resolve, 2000));
       } catch (e) {
           if (e.name === 'Error [InteractionCollectorError]') {
               await interaction.editReply({ content: 'Pas de réponse après 30 secondes, passage à la question suivante.', components: [] });
-              currentQuestionIndex++;
               await new Promise(resolve => setTimeout(resolve, 2000));
           } else {
               console.error(e);
