@@ -57,9 +57,9 @@ export default {
         }
 
         const embed = new EmbedBuilder()
-            .setColor('#0099ff')
-            .setTitle('Rôles automatiques')
-            .setDescription('Réagissez avec l\'emoji correspondant pour obtenir un rôle !')
+            .setColor('#001F93')
+            .setTitle('Auto-rôle')
+            .setDescription('Choississez votre ou vos spécialité(s) !')
             .addFields(roleConfigs.map(config => ({
                 name: interaction.guild.roles.cache.get(config.roleId).name,
                 value: config.emoji,
