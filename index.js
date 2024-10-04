@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
+import { handleReaction } from './commands/autorole.js';
 
 // Chargement des variables d'environnement
 dotenv.config();
@@ -285,6 +286,31 @@ client.on(Events.InteractionCreate, async (interaction) => {
             await interaction.reply({ content: errorMessage, ephemeral: true });
         }
     }
+});
+
+// Autorole
+client.on('messageReactionAdd', async (reaction, user) => {
+    if (reaction.partial) {
+        try {
+            await reaction.fetch();
+        } catch (error) {
+            console.error('Erreur lors de la récupération de la réaction:', error);
+            return;
+        }
+    }
+    handleReaction(reaction, user, client);
+});
+
+client.on('messageReactionRemove', async (reaction, user) => {
+    if (reaction.partial) {
+        try {
+            await reaction.fetch();
+        } catch (error) {
+            console.error('Erreur lors de la récupération de la réaction:', error);
+            return;
+        }
+    }
+    handleReaction(reaction, user, client);
 });
 
 // Connexion du bot
