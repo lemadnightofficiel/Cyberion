@@ -227,7 +227,7 @@ client.on(Events.GuildMemberAdd, async (member) => {
                     if (welcomeChannel) {
                         const welcomeEmbed = new EmbedBuilder()
                             .setTitle(`Bienvenue à Cyberia !`)
-                            .setDescription(`${member}, n'oublie pas de lire les règles et de passer un bon moment ! Au moindre problème ou à la moindre question n'hésite pas à contacter l'équipe du Staff.`)
+                            .setDescription(`${member}, n'oublie pas de lire les règles, de prendre tes rôles et de passer un bon moment ! Au moindre problème ou à la moindre question n'hésite pas à contacter l'équipe du Staff.`)
                             .setColor('#001F93')
                             .setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 256 }))
                             .setFooter({ text: `Membre #${member.guild.memberCount}` })
