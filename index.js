@@ -47,16 +47,24 @@ client.commands = new Collection();
 // Fonction pour envoyer des logs
 async function sendLogEmbed(guild, title, description, color, fields = []) {
     const logsChannel = guild.channels.cache.get(LOGS_CHANNEL_ID);
-    if (logsChannel) {
-        const embed = new EmbedBuilder()
-            .setTitle(title)
-            .setDescription(description)
-            .setColor(color)
-            .addFields(fields)
-            .setTimestamp();
-        await logsChannel.send({ embeds: [embed] });
+    if (!logsChannel) {
+      console.error(`Canal de logs avec l'ID ${LOGS_CHANNEL_ID} non trouvé.`);
+      return;
     }
-}
+    
+    try {
+      const embed = new EmbedBuilder()
+        .setTitle(title)
+        .setDescription(description)
+        .setColor(color)
+        .addFields(fields)
+        .setTimestamp();
+      
+      await logsChannel.send({ embeds: [embed] });
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi du message de log:', error);
+    }
+  }
 
 // Gestion des bans
 client.on(Events.GuildBanAdd, async (ban) => {
